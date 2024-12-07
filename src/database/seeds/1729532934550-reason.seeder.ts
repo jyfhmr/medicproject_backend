@@ -1,0 +1,208 @@
+import { config_admistrative_reason } from 'src/modules/audits/reason/entities/reason.entity';
+import { DataSource } from 'typeorm';
+import { Seeder } from 'typeorm-extension';
+
+export class ReasonSeeder1729532934550 implements Seeder {
+    track = false;
+
+    public async run(dataSource: DataSource): Promise<any> {
+        const repository = dataSource.getRepository(config_admistrative_reason);
+
+        const reason = [
+            {
+                NameReason: 'ANTICIPO',
+                description: 'PAGOS POR ADELANTADO SOBRE FACTURA',
+                transactionType: 'INGRESO',
+                module: 'VENTAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'ANTICIPO',
+                description: 'PAGOS POR ADELANTADO SOBRE FACTURA',
+                transactionType: 'EGRESO',
+                module: 'COMPRAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE CREDITO',
+                description: 'DEVOLUCION DE MERCANCIA',
+                transactionType: 'EGRESO',
+                module: 'VENTAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE CREDITO',
+                description: 'DEVOLUCION DE MERCANCIA',
+                transactionType: 'INGRESO',
+                module: 'COMPRAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE CREDITO',
+                description: 'DIFERENCIAL CAMBIARIO',
+                transactionType: 'EGRESO',
+                module: 'VENTAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE CREDITO',
+                description: 'DIFERENCIAL CAMBIARIO',
+                transactionType: 'INGRESO',
+                module: 'COMPRAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE CREDITO',
+                description: 'DESCUENTOS',
+                transactionType: 'EGRESO',
+                module: 'VENTAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE CREDITO',
+                description: 'DESCUENTOS',
+                transactionType: 'INGRESO',
+                module: 'COMPRAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE CREDITO',
+                description: 'OTROS',
+                transactionType: 'EGRESO',
+                module: 'VENTAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO',
+                description: 'OTROS',
+                transactionType: 'INGRESO',
+                module: 'COMPRAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO',
+                description: 'DEVOLUCION DE MERCANCIA',
+                transactionType: 'EGRESO',
+                module: 'VENTAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO',
+                description: 'DEVOLUCION DE MERCANCIA',
+                transactionType: 'INGRESO',
+                module: 'COMPRAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO',
+                description: 'DIFERENCIAL CAMBIARIO',
+                transactionType: 'EGRESO',
+                module: 'VENTAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO',
+                description: 'DIFERENCIAL CAMBIARIO',
+                transactionType: 'INGRESO',
+                module: 'COMPRAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO',
+                description: 'DESCUENTOS',
+                transactionType: 'EGRESO',
+                module: 'VENTAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO',
+                description: 'DESCUENTOS',
+                transactionType: 'INGRESO',
+                module: 'COMPRAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO',
+                description: 'OTROS',
+                transactionType: 'EGRESO',
+                module: 'VENTAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE CREDITO',
+                description: 'OTROS',
+                transactionType: 'INGRESO',
+                module: 'COMPRAS',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO/CREDITO',
+                description: 'GASTOS BANCARIOS',
+                transactionType: 'EGRESO',
+                module: 'TESORERIA',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO/CREDITO',
+                description: 'GASTOS BANCARIOS',
+                transactionType: 'INGRESO',
+                module: 'TESORERIA',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO/CREDITO',
+                description: 'INTERESES BANCARIOS',
+                transactionType: 'EGRESO',
+                module: 'TESORERIA',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'NOTA DE DEBITO/CREDITO',
+                description: 'INTERESES BANCARIOS',
+                transactionType: 'INGRESO',
+                module: 'TESORERIA',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'AJUSTE',
+                description: 'AJUSTE',
+                transactionType: 'EGRESO',
+                module: 'TESORERIA',
+                isActive: true,
+                user: { id: 1 },
+            },
+            {
+                NameReason: 'AJUSTE',
+                description: 'AJUSTE',
+                transactionType: 'INGRESO',
+                module: 'TESORERIA',
+                isActive: true,
+                user: { id: 1 },
+            },
+        ];
+        await repository.save(reason);
+    }
+}
+
