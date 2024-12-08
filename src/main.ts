@@ -36,6 +36,8 @@ async function bootstrap() {
             if (!origin || allowedOrigins.includes(origin)) {
                 callback(null, true);
             } else {
+                console.log("this origin now allowed",origin)
+                console.log("origin allowed",process.env.FRONT_URL)
                 console.error('origin-' + origin);
                 callback(new Error('Not allowed by CORS'));
             }
